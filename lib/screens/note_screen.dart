@@ -118,6 +118,31 @@ class StatelessWidget {
 class IconButton {
 }
 
+
+class ShowLess extends StatelessWidget {
+  final Widget child;
+  final bool condition;
+  ShowWhen(Set<Object> set, {this.child, this.condition});
+
+  @override
+  Widget build(BuildContext context) {
+    return Opacity(opacity: this.condition ? 1.0 : 0.0, child: this.child);
+  }
+
+class ShowMore extends StatelessWidget {
+  final Widget child;
+  final bool condition;
+  ShowWhen({this.child, this.condition});
+
+  @override
+  Widget build(BuildContext context) {
+    return Opacity(opacity: this.condition ? 1.0 : 0.0, child: this.child);
+  }
+}
+
+}
+ 
 class Icon {
+  
   Icon(check_circle, {int size});
 }
