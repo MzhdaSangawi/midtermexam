@@ -143,6 +143,7 @@ class ShowMore extends StatelessWidget {
 }
  
 class Icon {
-  
+  static const IconData delete_sweep = IconData(0xe1bc, fontFamily: 'MaterialIcons');
+
   Icon(check_circle, {int size});
 }
