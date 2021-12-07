@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-import 'screens/list_screen.dart';
+import './screens/home.dart';
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    title: 'MAP Mid Term Test',
-    theme: ThemeData(
-      primarySwatch: Colors.blue,
-    ),
-    home: ListScreen(),
-  ));
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Home(),
+    );
+  }
 }

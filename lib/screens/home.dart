@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './notes_edit.dart';
 
 const c1 = 0xFFFDFFFC,
     c2 = 0xFFFF595E,
@@ -36,16 +37,19 @@ class _Home extends State<Home> {
         ),
 
         //Floating Button
-        floatingActionButton: FloatingActionButton(
-          child: const Icon(
-            Icons.add,
-            color: const Color(c5),
-          ),
-          tooltip: 'New Notes',
-          backgroundColor: const Color(c4),
-          onPressed: () => {},
-        ),
-      ),
-    );
-  }
-}
+        //Floating Button
+floatingActionButton: FloatingActionButton(
+    child: const Icon(
+        Icons.add,
+        color: const Color(c5),
+    ),
+    tooltip: 'New Notes',
+    backgroundColor: const Color(c4),
+    // Go to Edit screen
+    onPressed: () {
+      Navigator.push(
+        context,     
+        MaterialPageRoute(builder: (context) => NotesEdit()),
+      );
+    }
+),
