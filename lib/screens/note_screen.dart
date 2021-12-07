@@ -59,4 +59,65 @@ class NoteScreen extends StatelessWidget {
       ),
     );
   }
+
+  Scaffold({appBar, body}) 
+  {
+     ListView(
+          children: const <Widget>[
+            ListTile(
+              title: Text('what is flutter?'),
+            ),
+            ListTile(
+
+              title: Text('stateful widget'),
+            ),
+            ListTile(
+
+              title: Text('Conditional (terenary) operator'),
+            ),
+
+   
+
+
+  }
+}
+
+class ListTile {
+}
+
+class Widget {
+}
+
+class ListView {
+}
+
+class Container {
+}
+
+class AppBar {
+}
+
+class BuildContext {
+}
+
+class InputDecoration {
+}
+
+class TextFormField {
+}
+
+class Expanded {
+}
+
+class SizedBox {
+}
+
+class StatelessWidget {
+}
+
+class IconButton {
+}
+
+class Icon {
+  Icon(check_circle, {int size});
 }
